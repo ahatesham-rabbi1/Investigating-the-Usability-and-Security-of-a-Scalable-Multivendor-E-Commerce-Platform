@@ -45,13 +45,13 @@ include("functions/functions.php");
         <li>
             <li><a class="active" href="index.php">HOME</a></li> 
             <!-- <li><a href="trimer.php">SHOP</a></li> -->
-            <li><a href="#arrival">PRODUCTS</a></li>
+            <li><a href="#best">PRODUCTS</a></li>
             <!-- <li><a href="#parlor">PARLOR</a></li>
             <li><a href="#garment">GARMENTS</a></li>
             <li><a href="#use">DAILY-USE</a></li> -->
             <li><a href="#deal">DEAL</a></li>
             <li><a href="contactus.php">CONTACT</a></li>
-            <li><a href="#footer">ABOUT</a></li>
+            <!-- <li><a href="#footer">ABOUT</a></li> -->
        <div class="col-md-6">
         <ul class="menu">
             <li>
@@ -87,8 +87,9 @@ include("functions/functions.php");
 
                     ?>
                    </li> 
-                   <li>
-                   <a href="cart.php"><i class="fa fa-shopping-cart"></i>Goto Cart</a></li>
+                   <!-- <li>
+                   <a href="cart.php"><i class="fa fa-shopping-cart"></i>Goto Cart</a>
+                </li> -->
                   <li>
                      <?php
 
@@ -165,7 +166,7 @@ while ($row= mysqli_fetch_array($run_slider)) {
 <!-- home section ends -->
 <!-- new this week section start -->
 <!-- hot start -->
-
+<section class="best" id="best">
 <div class="hot">    
     <div class="box">
         <div class="container">
@@ -188,15 +189,14 @@ while ($row= mysqli_fetch_array($run_slider)) {
  </div>
 </div>
 </div>
+</section>
 <!-- dynamic latest this week images section End  -->
 
 <!-- new this week section End -->
 
 
 <!--saloon product section starts  -->
-
-<!-- Trimer Start  -->
-<section class="arrival" id="arrival">
+<!-- <section class="arrival" id="arrival">
 <h1 class="heading"> <span>SALLON PRODUCTS</span> </h1>
 <div class="box-container">
     <div class="box">
@@ -209,7 +209,6 @@ while ($row= mysqli_fetch_array($run_slider)) {
         <div class="overlay">
         </div>
     </div>
-<!-- Trimer End  -->
     <div class="box">
         <div class="image">
            <a href="trimer.php?p_cat=23">  <img src="website/all/drayer.svg" alt=""></a>
@@ -361,7 +360,7 @@ while ($row= mysqli_fetch_array($run_slider)) {
         </div>
     </div>
     </div>
-</section>
+</section> -->
 
 <!-- saloon products section ends -->
 <!-- parlor products section starts -->
@@ -783,4 +782,5 @@ function showSlides(n) {
 
 </body>
 </html>
+
 
