@@ -111,7 +111,7 @@ include("functions/functions.php");
 <!-- home section starts  -->
 <section class="home" id="home">
 
-<h1 class="heading"> <span>BEST OFFERS FOR YOU</span> </h1>
+<h1 class="heading"><span>Top Picks & Best Deals</span></h1>
 
 <div class="slideshow-container">
 <!-- dynamic hairstyle images section starts  -->
@@ -729,7 +729,7 @@ while ($row=mysqli_fetch_array($run_box)) {
             </div>
             <div class="pal">
             </div>
-            <p class="credit">Copyright &copy; <span>2015-2024</span> | all rights reserved. | <span>Shopixia</span></p>
+            <p class="credit">Copyright &copy; <span>2026</span> | all rights reserved. | <span>Shopixia</span></p>
         </div>
      </div>
   </footer>
