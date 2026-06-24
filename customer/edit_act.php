@@ -14,6 +14,7 @@ $customer_address=$row_cust['customer_address'];
 $customer_image=$row_cust['customer_image'];
 
   ?>
+
 <div class="rx">
 	<center>
 	<h1>Edit Your Account</h1>

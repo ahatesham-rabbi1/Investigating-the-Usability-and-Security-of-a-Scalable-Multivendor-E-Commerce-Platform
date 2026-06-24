@@ -47,4 +47,5 @@ if (isset($_POST['update'])) {
 	echo "<script> alert('Your Password Changed') </script>";
 	echo "<script> window.open('my_account.php?my_order') </script>";
 }
+
   ?>

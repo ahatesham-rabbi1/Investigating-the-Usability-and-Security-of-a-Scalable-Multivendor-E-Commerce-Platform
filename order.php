@@ -1,6 +1,7 @@
 <?php
 session_start();
 include("includes/db.php");
+
 include("functions/functions.php");
   ?>
 
@@ -40,4 +41,3 @@ while ($row_pro=mysqli_fetch_array($run_pro)) {
 }
 
   ?>
-

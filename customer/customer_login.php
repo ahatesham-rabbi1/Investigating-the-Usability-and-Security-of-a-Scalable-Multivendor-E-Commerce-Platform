@@ -22,6 +22,7 @@
 		<h3>New ? Register Now </h3>
 	</a></center>
 </div>
+
 <?php
 
 if (isset($_POST['login'])) {

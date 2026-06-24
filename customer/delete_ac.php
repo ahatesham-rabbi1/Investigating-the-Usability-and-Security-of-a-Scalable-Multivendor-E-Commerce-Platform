@@ -9,6 +9,7 @@
 		<input type="submit" name="no" value="No, I don't want" class="btn btn-primary">
 	</form></center>
 </div>
+
 <?php 
 
 $c_email=$_SESSION['customer_email'];
