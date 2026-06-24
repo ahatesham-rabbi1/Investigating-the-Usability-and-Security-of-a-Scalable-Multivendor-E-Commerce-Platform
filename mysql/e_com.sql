@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 23, 2026 at 08:41 PM
--- Server version: 10.4.20-MariaDB
--- PHP Version: 7.4.22
+-- Generation Time: Jun 19, 2021 at 12:56 PM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -44,7 +44,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`admin_id`, `admin_name`, `admin_email`, `admin_pass`, `admin_image`, `admin_contact`, `admin_country`, `admin_job`, `admin_about`) VALUES
-(5, 'Mr Admin', 'admin@gmail.com', '12345', 'croppedImage_1531040053949.png', '7015963438', 'UK', 'WEB DEVELOPER', 'I AM Admin');
+(5, 'Rakesh Kumar', 'rakeshalakh@gmail.com', '12345', 'croppedImage_1531040053949.png', '7015963438', 'india', 'WEB DEVELOPER', 'I AM RAKESH KUMAR');
 
 -- --------------------------------------------------------
 
@@ -81,13 +81,6 @@ CREATE TABLE `cart` (
   `qty` int(100) NOT NULL,
   `size` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `cart`
---
-
-INSERT INTO `cart` (`p_id`, `ip_add`, `qty`, `size`) VALUES
-(32, '::1', 1, 'RED & Blue');
 
 -- --------------------------------------------------------
 
@@ -136,13 +129,12 @@ CREATE TABLE `customers` (
 --
 
 INSERT INTO `customers` (`customer_id`, `customer_name`, `customer_email`, `customer_pass`, `customer_country`, `customer_city`, `customer_contact`, `customer_address`, `customer_image`, `customer_ip`) VALUES
-(23, 'John', 'john@gmail.com', '12345', 'USA', 'Austin', '08295401008', '1600 Pennsylvania Avenue NW, Washington, DC 20500, USA', 'Licence.jpg', '::1'),
-(24, 'John Doe', 'johnd@gmail.com', '12345', 'UK', 'London', '+018295401008', 'London SW1A 1AA, United Kingdom', 'IMG_20180831_153629.jpg', '::1'),
-(25, 'John Raino', 'jr@gmail.com', '12345', 'USA', 'Trio Land', '08295401008', '20 W 34th St, New York, NY 10001, USA', 'PHOTO.jpg', '::1'),
-(26, 'John Kenidy', 'jk@gmail.com', '12345', 'UK', 'Bhiwani', '08295401008', 'Great Russell St, London WC1B 3DG, United Kingdom', 'Pic-4.jpg', '::1'),
-(27, 'ankita', 'ankita@gmail.com', 'abcd', 'USA', 'Washington', '1234567890', '175 5th Ave, New York, NY 10010, USA', 'th.jpg', '::1'),
-(28, 'PK Kenidy', 'kenidy@gmail.com', '12345', 'USA', 'Boston', '08295401008', '24 Beacon St, Boston, MA 02133, USA', 'pkl.png', '::1'),
-(29, 'Rahul', 'rahul@gmail.com', '12345678@', 'Bangladesh', 'Dhaka', '01234567890', 'Dhaka Bangladesh', 'flux-dev_A_highly_realistic_3D_aerial_scene_viewed_from_a_top-right_camera_angle_showcasi-1 1.png', '::1');
+(23, 'raku', 'raku08@gmail.com', '12345', 'India', 'Bhiwani', '08295401008', 'Vpo- Alakhpura, Teh-Bawani khera', 'Licence.jpg', '::1'),
+(24, 'Rakesh Kumar', 'rakesh@gmail.com', '12345', 'India', 'Bhiwani', '+918295401008', 'Vpo- Alakhpura', 'IMG_20180831_153629.jpg', '::1'),
+(25, 'Rakesh Kumar', 'rakekh@gmail.com', '12345', 'India', 'Bhiwani', '08295401008', 'Vpo- Alakhpura, Teh-Bawani khera', 'PHOTO.jpg', '::1'),
+(26, 'jateen tanwar ', 'jateentanwar@gmail.com', '12345', 'India', 'Bhiwani', '08295401008', 'Vpo- Alakhpura, Teh-Bawani khera', 'Pic-4.jpg', '::1'),
+(27, 'ankita', 'ankita@gmail.com', 'abcd', 'india', 'har', '1234567890', 'sampla', 'th.jpg', '::1'),
+(28, 'Rakesh Kumar', 'rakeshalakh@gmail.com', '12345', 'India', 'Bhiwani', '08295401008', 'Vpo- Alakhpura, Teh-Bawani khera', 'youtube_logo.png', '::1');
 
 -- --------------------------------------------------------
 
@@ -231,7 +223,7 @@ INSERT INTO `products` (`product_id`, `p_cat_id`, `cat_id`, `date`, `product_tit
 (21, 3, 5, '2021-05-20 08:35:26', 'Shaving Cream', 'crem.jpg', 'crem.jpg', 'crem.jpg', 299, 'erg', 'new arrival'),
 (22, 14, 5, '2021-05-20 08:37:35', 'Towel', 'Pic-4.jpg', 'Pic-4.jpg', 'Pic-4.jpg', 199, 'best', 'Makhmal'),
 (23, 14, 5, '2021-05-20 08:39:19', 'Hair Drayer', 's-l1600.jpg', 's-l1600.jpg', 's-l1600.jpg', 349, 'best', 'new arrival'),
-(26, 1, 2, '2026-06-23 15:09:35', 'Garniar Product', 'garnier-Black-Naturalpacket-natural-Black-1.0.png', 'kemi.jpg', 'f6330a00-2dda-4c44-94d4-bfbf641d11a4.35a8aef2cceee4b1f480adc7148ba7a5.jpeg', 544, 'fg', 'new arrival  lllllllllllll'),
+(26, 1, 2, '2021-05-21 10:05:09', 'rakesh kumar', 'garnier-Black-Naturalpacket-natural-Black-1.0.png', 'kemi.jpg', 'f6330a00-2dda-4c44-94d4-bfbf641d11a4.35a8aef2cceee4b1f480adc7148ba7a5.jpeg', 544, 'fg', 'new arrival  lllllllllllll'),
 (32, 10, 8, '2021-06-18 00:15:41', 'Stylish Comb', 'comb-11.jpg', 'com.jpg', 'th (1).jpg', 543, '', 'new arrival'),
 (38, 21, 7, '2021-06-18 00:10:01', 'Philips trimmer for men', 'trimer1.jpg', 'trimer2.jpg', 'trimer3.jpg', 1495, '', 're');
 
@@ -403,7 +395,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `customer_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `customer_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `customer_order`
